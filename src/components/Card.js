@@ -84,7 +84,7 @@ const Progress = ({ value, title }) => {
       </Typography>
       <div
         style={{
-          width: `${value}px`,
+          width: `${value * 2}px`,
           height: "10px",
           backgroundColor: isChangeMode ? "#FFF" : "#f3f3f3",
           borderRadius: "10px",

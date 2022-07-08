@@ -19,6 +19,8 @@ const ButtonNavigations = ({ children, url, title, usingBorder }) => {
           borderRadius: "20px",
           border: usingBorder ? "1px solid #e3e3e3" : "none",
           backgroundColor: bgColor,
+          pr: 1,
+          pl : 1
         }}
       >
         <Typography

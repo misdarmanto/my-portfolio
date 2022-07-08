@@ -21,7 +21,7 @@ const Navigations = () => {
   return (
     <div
       style={{
-        borderBottom: isChangeMode ? "none" : "1px solid #e3e3e3",
+        borderBottom: isChangeMode ? "1px solid #000" : "1px solid #e3e3e3",
         backgroundColor: bgColor,
         marginBottom: "50px",
         minHeight: "70px",
@@ -37,9 +37,9 @@ const Navigations = () => {
           alignItems="center"
           flexWrap="wrap"
         >
-          <Stack direction="row" alignItems="center" spacing={1}>
-            <Typography variant="h5" sx={{ fontWeight: "bold", color: color }}>
-              Projects
+          <Stack direction="row" alignItems="center">
+            <Typography variant="h5" sx={{ fontWeight: "bold", color: color, pr: 1 }}>
+             My Projects
             </Typography>
             <p
               style={{
@@ -49,24 +49,25 @@ const Navigations = () => {
                 borderRadius: "20px",
                 minWidth: "30px",
                 textAlign: "center",
+                border: "1px solid #e3e3e3"
               }}
             >
               20
             </p>
           </Stack>
 
-          <Stack direction="row">
-            <ButtonNavigations url={"https://stackoverflow.com"} title="Github">
+          <Stack direction="row" spacing={1}>
+            <ButtonNavigations url={"https://github.com/misdarmanto"} title="Github">
               <GitHubIcon />
             </ButtonNavigations>
             <ButtonNavigations
-              url={"https://stackoverflow.com"}
+              url={"https://play.google.com/store/apps/developer?id=Misdar+Manto"}
               title="PlayStore"
             >
               <IoLogoGooglePlaystore fontSize={"25px"} />
             </ButtonNavigations>
             <ButtonNavigations
-              url={"https://stackoverflow.com"}
+              url={"https://www.youtube.com/c/Misdar_Youtube/videos"}
               title="Youtube"
             >
               <FiYoutube fontSize={"25px"} />
@@ -84,7 +85,7 @@ const Navigations = () => {
 };
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
-  width: 62,
+  width: 60,
   height: 34,
   padding: 7,
   "& .MuiSwitch-switchBase": {
